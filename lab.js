@@ -7,6 +7,13 @@
 */
 
 //CODE HERE
+let lovesCode = true;
+
+if (lovesCode === true) {
+  console.log("I love to code!");
+} else {
+  console.log('Coding has its challenges');
+}
 
 // For problems 2-3 use the following lines of code:
 var amysAge = 29
@@ -21,6 +28,13 @@ var brittanisBirthYear = 1986
 */
 
 //CODE HERE
+if (amysAge > brittanisAge) {
+  console.log('Amy is older.');
+} else if (amysAge < brittanisAge) {
+  console.log('Brittani is older.');
+} else {
+  console.log('Amy and Brittani are the same age.');
+}
 
 
 ////////// PROBLEM 3 //////////
@@ -30,7 +44,11 @@ var brittanisBirthYear = 1986
 */
 
 //CODE HERE
-
+if (amysBirthYear === brittanisBirthYear) {
+  console.log('Amy and Brittani were born in the same year.');
+} else {
+  console.log('Amy and Brittani were not born in the same year.');
+}
 
 ////////// PROBLEM 4 //////////
 
@@ -43,6 +61,19 @@ let rain = true
 */
 
 //CODE HERE
+if (temperature >= 80 && rain) {
+  console.log('Wear a t-shirt and take an umbrella.');
+} else if (temperature >= 80) {
+  console.log('Wear a t-shirt.');
+} else if (temperature < 80 && temperature > 60 && rain) {
+  console.log('Wear a rain jacket.');
+} else if (temperature < 80 && temperature > 60) {
+  console.log('Wear a button-up shirt.');
+} else if (temperature <= 60 && rain) {
+  console.log('Wear a jacket and take an umbrealla.');
+} else {
+  console.log('Wear a jacket.');
+}
 
 
 ////////// PROBLEM 5 //////////
@@ -52,6 +83,9 @@ let rain = true
 */
 
 //CODE HERE
+for (let i = 0; i < 10; i++) {
+  console.log('Hello.');
+}
 
 
 ////////// PROBLEM 6 //////////
@@ -61,6 +95,9 @@ let rain = true
 */
 
 //CODE HERE
+for (let i = 1; i <= 10; i++ ) {
+  console.log(i);
+}
 
 
 ////////// PROBLEM 7 //////////
@@ -70,6 +107,9 @@ let rain = true
 */
 
 //CODE HERE
+for (let i = 10; i >= 0; i--) {
+  console.log(i);
+}
 
 let score = 0
 let passingScore = 7
@@ -81,6 +121,10 @@ let passingScore = 7
 */
 
 //CODE HERE
+while (score < passingScore) {
+  console.log('Your score is not high enough.');
+  score++
+}
 
 ////////// INTERMEDIATE PROBLEMS //////////
 
@@ -92,6 +136,14 @@ let passingScore = 7
 */
 
 //CODE HERE
+let changeMyMind = true;
+
+if (changeMyMind) {
+  changeMyMind = !changeMyMind;
+} else {
+  changeMyMind = !changeMyMind
+}
+
 
 ////////// PROBLEM 10 //////////
 // Try to change the value of changeMyMind (irrespective of whether it is true or false) and then console.log it's new status. It should log true. Hint: use the not operator.
